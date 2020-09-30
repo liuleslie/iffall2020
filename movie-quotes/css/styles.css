@@ -1,0 +1,60 @@
+/*
+a { 
+	color: red;
+	font-size: 38px;
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: normal;
+	font-style: italic;
+}*/
+
+@font-face {
+	font-family: "IBMPlexMono";
+	src: url("fonts/IBMPlexMono-Medium.otf") format("opentype");
+/*	url("fonts/IBMPlexMono-MediumItalic.otf") format("opentype");*/
+	font-family: "AuthenticSans";
+	src: url("fonts/AUTHENTICSANS-90.otf") format("opentype");
+}
+
+body {background-color: #efefef;}
+
+#LL {
+	font-family: "IBMPlexMono";
+}
+
+.Venkman {
+	font-family: "IBMPlexMono";
+}
+
+.Barrett {
+	font-family: "IBMPlexMono";
+}
+
+.Mayor {
+	font-family: "IBMPlexMono";
+}
+
+.Stantz {
+	font-family: "IBMPlexMono";
+}
+
+.Spengler {
+	font-family: "IBMPlexMono";
+}
+
+.Zeddemore {
+	font-family: "IBMPlexMono";
+}
+
+.textBlock {
+	font-size: 30px;
+	font-family: "AuthenticSans"
+}
+
+.stagedir {
+	font-family:"IBMPlexMono";
+	color: rgb(150,150,150);
+}
+

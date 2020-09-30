@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+
+		<!--font ref:
+	> https://css-tricks.com/snippets/css/using-font-face/
+	> https://stackoverflow.com/questions/38086083/to-use-local-font-in-html-using-font-face
+
+-->
+
+
+
+		<!--metadata-->
+		<!--semantic markup: html. styling with CSS. ACCESSIBILITY!! screen readers, etc. this structural markup helps anyone reviewing, screenreaders read your code. the hierarchy and structure here is logical, rather than physical/spatial (that's CSS)
+
+			css is arranged in property: value pairs. 
+
+			user agent stylesheet = default styling.
+
+			a class is more specific than a tag name: specificity determins priority-->
+
+		<title>GHOSTBUSTERS (1984)</title>
+		<link href="css/styles.css" rel="stylesheet"> <!--this is a relative path; start from where the index file already lives.-->
+
+	</head>
+	<body>
+
+		<header> <!--nav, title, beginning of a section-->
+
+			<!-- <h1>
+				test test! visible page title
+			</h1> -->
+
+			<nav> <!--the href attribute is additional info that goes after tag. href: hypertext reference.-->
+				<!-- <a href="https://www.instagram.com/lesleeliew">click me pick me!</a> -->
+			</nav>
+		</header>
+
+		<main>
+
+			<!--an image tag is a self closing tag: it is the image, doesn't contain anything.
+
+				in CSS: .intro selects "intro" class
+						# selects based on id
+
+				CLASS v ID: IDs need to be unique on the page. elements can only have one ID.
+
+				you can apply multiple classes to an element: for example, <p class = "intro first"> has p in both intro and first classes.
+
+					-->
+
+			<div class="textBlock AuthenticSans">
+				<p>
+				<span class="Venkman IBMPlexMono">Dr. Peter Venkman: </span>
+				"What I'd really like to do is talk to Dana. Dana? It's Peter."</p>
+				<p>
+				<span class="Barrett IBMPlexMono">Dana Barrett: </span>
+				"There is no Dana, there is only Zuul."</p>
+				<p>
+				<span class="Venkman IBMPlexMono">Dr. Peter Venkman: </span>
+				"Oh, Zuulie, you nut, now c'mon. Just relax, c'mon. I want to talk to Dana. Dana, Dana. Can I talk to Dana?"</p>
+				<p>
+				<span class="Barrett IBMPlexMono">Dana Barrett: </span>
+				"in an inhuman demonic voice There is no Dana, only Zuul!"</p>
+				<p>
+				<span class="Venkman IBMPlexMono">Dr. Peter Venkman: </span>
+				"What a lovely singing voice you must have."</p>
+			</div>
+
+
+
+			<div class="textBlock">
+				
+				<p>
+				<span class="Venkman">Dr. Peter Venkman: </span>
+				"This city is headed for a disaster of biblical proportions."</p>
+				<p>
+				<span class="Mayor">Mayor: </span>
+				"What do you mean, 'biblical?'"</p>
+				<p>
+				<span class="Stantz">Dr. Ray Stantz: </span>
+				"What he means is Old Testament, Mr. Mayor, real wrath of God type stuff."</p>
+				<p>
+				<span class="Venkman">Dr. Peter Venkman: </span>
+				"Exactly."</p>
+				<p>
+				<span class="Stantz">Dr. Ray Stantz: </span>
+				"Fire and brimstone coming down from the skies! Rivers and seas boiling!"</p>
+				<p>
+				<span class="Spengler">Dr. Egon Spengler: </span>
+				"Forty years of darkness! Earthquakes, volcanoes..."</p>
+				<p>
+				<span class="Zeddemore">Winston Zeddemore: </span>
+				"The dead rising from the grave!"</p>
+				<p>
+				<span class="Venkman">Dr. Peter Venkman: </span>
+				"Human sacrifice, dogs and cats living together... mass hysteria!"</p>
+				<p>
+				<span class="Mayor">Mayor: </span>
+				"All right, all right! I get the point!"</p>
+			</div>
+
+
+			<div class="textBlock">
+				<p class="stagedir">[clearing away tables in the dining room to make room for the ghost trap]</p>
+				<p>
+				<span class="Stantz">Dr. Ray Stantz: </span>
+				I've gotta get this in the clear...!</p>
+				<p>
+				<span class="Stantz">Dr. Ray Stantz: </span>
+				Wait, wait, wait! I've always wanted to do this...</p>
+				<p class="stagedir">[He yanks a tablecloth off of a table, overturning and shattering everything except the centerpiece in the middle]</p>
+				<p>
+				<span class="Venkman">Dr. Peter Venkman: </span>
+				<span class="stagedir">[triumphantly] </span> 
+				And the flowers are still standing!</p>
+			</div>
+
+
+		</main>
+
+		<footer id = "LL">built by Leslie. glad you stopped by.
+		</footer>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
