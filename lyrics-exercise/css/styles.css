@@ -1,0 +1,35 @@
+@font-face {
+	/*font-family: "__NAME HERE__";*/
+	font-family: "happyTimes";
+	src: url("fonts/happy-times-NG_regular_master.otf") format('opentype');
+
+}
+
+body {
+	background-color: ##f4f4f4;
+	padding: 40px 40px 60px 40px;
+
+	/*top right bottom left*/
+}
+
+p {
+	font-family: "happyTimes";
+	font-size: 25px;
+	color: #262422;
+	line-height: 1.35;
+}
+
+
+#title {
+	font-size: 15px;
+	color: #262422;
+}
+
+.verse {
+}
+
+.chorus {
+}
+
+.bridge {
+}
