@@ -1,0 +1,65 @@
+html {
+	font-family: 'David Libre', serif;
+	font-size: 30px;
+	line-height: 1.25;
+	margin:10%;
+}
+
+a {
+	font-style: normal;
+	color: gray;
+	text-decoration: solid underline;
+}
+
+a:hover {
+	font-style: italic;
+	color: steelblue;
+	text-decoration: none;
+}
+
+section {
+	margin-top: 8%;
+}
+
+section:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+.chorus:hover {
+	color:rgba(70, 130, 180,1);
+}
+
+.outro:hover {
+	color: rgba(70, 130, 180, 0.75);
+}
+
+h5 {
+	font-size: 0.5rem;
+	margin-bottom: -3%;
+	color: rgba(0,0,0,0.75);
+	letter-spacing: 0.05em;
+}
+
+.chorus {
+	margin-left: 10%;
+}
+
+.outro {
+	text-align: right;
+	animation: color;
+}
+
+span {
+	font-style: italic;
+}
+
+header {
+	margin-bottom: 10%
+	/*color: steelblue;			--> this didn't work?*/
+}
+
+footer {
+	margin-top: 20%;
+	color: gray;
+	font-size: 0.75rem;
+}
