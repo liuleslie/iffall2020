@@ -1,0 +1,98 @@
+/*selector {
+  property-name: value;
+  another-property-name: value;
+}*/
+
+
+html {
+	color: gray;/*
+	font-family:Arial, Helvetica, sans-serif;*/
+	font-family:'Roboto Condensed', sans-serif; /*when there are two rules in the same block, the last one will be used. commenting out to be safe.*/
+	font-size: 15pt; /*pt as opposed to px. 1 point = 1/72"*/
+}
+
+h1 {
+	font-family: vista-slab, serif;
+	font-weight: 700;
+	font-style: normal;
+	
+	color: black;
+	letter-spacing: -0.02em;
+	text-transform: capitalize;
+	text-indent: -1rem; /*to outdent h1s.*/
+}
+
+
+p {
+	font-size: 13pt;
+	line-height: 1.4;
+}
+
+sup {
+	font-size: 60%; /* means 0.6em. scales in prop to <p>.*/
+}
+
+dfn {
+	font-weight: bold;
+	text-transform: lowercase;
+	/*font-style: normal;*/
+}
+
+small {
+	font-style: italic;
+/*	oblique forces the type to slant/tilt regardless of the presence of an italic style*/
+}
+
+aside {
+	text-align: center;
+}
+
+cite {
+	text-align: right;
+	display: block; /*overrides inherited/default styling. made its own block; more vertical room.*/
+}
+
+body {
+	margin: 10%; /*scales proportionally to window width.*/
+}
+
+article {
+	margin: 6rem 0; /*2 values:  6 rem, and 0—margin is a shorthand prop, 6 rem is what's applied vertically; 0 is left and right/horizontal. 0 here bc already have 10% margin for body.*/
+}
+
+section {
+	margin: 2.5em 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+code {
+	color: steelblue; /*maybe get VScode for color picker tool!!*/
+}
+
+
+
+
+/*
+selector: portion of rules that specifies what needs to be applied on
+properties: in name-value pairs, different things to change/style
+*/
+
+/*the closer a rule is the an element, the higher priority it has: it 
+overrides inherited rules*/
+
+/*
+absolute units: points and pixels.
+relative: ems?
+*/
+/*
+ 1 em is the current font size rendered in doc. em is measured in relation to parent element; rem is the base size for html
+
+ em considers surrounding type.
+
+ dfn by default is italicized.
+
+
+ */
