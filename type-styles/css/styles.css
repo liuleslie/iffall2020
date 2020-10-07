@@ -1,0 +1,89 @@
+
+
+html {
+	font-family: 'Crimson Text', serif;
+	font-size: 30px;
+	margin: 10%;
+}
+
+/*broader, section/organizational styling*/
+
+#summary {
+	color: gray;
+}
+
+.property {
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+
+a {
+	color: #1EA08D;
+	text-decoration: none;
+}
+
+
+h3 {/*
+	color: #1ea08d;*/
+	text-transform: uppercase;
+	margin-top: 25%;
+}
+
+h5 {/*
+	color: #1ea08d;*/
+	margin-top: 10%;
+	margin-bottom: 0%;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 0.75em;
+}
+
+footer {
+	color: gray;
+}
+
+/*individual styled examples*/
+
+#prop1_regular {
+	font-weight: normal;
+}
+#prop1_semibold {
+	font-weight: 600;
+}
+#prop1_bold {
+	font-weight: bold; /*what is "bolder"?*/
+}
+
+#prop2_roman {
+	font-style: normal;
+}
+#prop2_italic {
+	font-style: italic;
+}
+
+#prop3_open {
+	letter-spacing: 0.02em;
+}
+#prop3_tight {
+	letter-spacing: -0.05em;
+}
+
+#prop4_upper {
+	text-transform: uppercase;
+}
+#prop4_lower {
+	text-transform: lowercase;
+}
+
+#prop5_underline {
+	text-decoration: underline solid;
+}
+#prop5_overline {
+	text-decoration: overline wavy;
+}
+#prop5_linethrough {
+	text-decoration: line-through dashed;
+}
+
