@@ -1,0 +1,9 @@
+.portrait {
+	float: left;
+	margin: 0 2rem 2rem 0; /* t r b l 
+	adjusting margins because this is the space between two elements*/ 
+}
+
+.instructions {
+	clear: both;
+}
