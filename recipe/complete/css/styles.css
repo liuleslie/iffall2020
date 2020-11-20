@@ -1,0 +1,113 @@
+html {
+	max-width:960px;
+	/*min-width: 320px;*/
+	padding:5%;
+	margin-left:auto;
+	margin-right:auto;
+
+	/* function down to 320px wide */
+	/* image scales with window, ingredients and instructions
+	side by side when above 640px */
+
+	background-color:ivory;
+}
+
+html, body {
+	font-family: 'David Libre', serif;
+	font-size:15pt;
+	line-height:1.2rem;
+}
+
+
+
+.side-by-side {
+	display:flex;
+	flex-wrap:wrap;
+	grid-template-columns: 1fr 1fr;
+	padding-left:0;
+	list-style-type:none;
+}
+
+img {
+	width:100%;
+	border-radius: 30vw;
+	margin-top:30px;
+	margin-bottom:60px;
+}
+
+@media (max-width:320px) {
+	.side-by-side section {
+		width:100%;
+	}
+	img {
+		border-radius:90%;
+	}
+}
+
+@media (min-width:640px) {
+	.side-by-side section {
+		width:50%;
+	}
+	img {
+		border-radius:10%;
+	}
+}
+
+li {
+	padding-bottom:20px;
+}
+
+.unit {
+	font-weight:bolder;/*
+	font-style:italic;*/
+}
+
+
+/*.
+	width:100% for small?
+	or u can only apply dispaly flex at the certain size
+
+	flex direction prop
+
+	(img in div, hidden overflow, relative dimensions)
+}*/
+
+.ingredients ul {
+	list-style-type: circle;
+}
+
+aside {
+	padding-left:5%;
+	margin-bottom:3%;
+}
+
+li { /*color:#262626;*/
+	color:#3d3d3d;
+}
+
+li:hover {
+	color:black;
+	font-weight:bold;
+}
+
+a {
+	color:gray;
+	text-decoration-line: none;
+}
+
+a:hover {
+	color:black;
+	text-decoration-line: underline;
+}
+
+h1 {
+/*	text-align:center;*/
+}
+
+.credit {
+	/*trbl NEED TO DIFFERENTIATE CREDIT FROM END OF TEXT, MARK A CLEAR END.*/
+	margin: 150px 0 50px 0;
+	text-align: center;
+}
+
+
