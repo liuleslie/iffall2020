@@ -1,0 +1,66 @@
+html {
+	max-width:960px;
+	/*min-width: 320px;*/
+	padding:5%;
+	margin-left:auto;
+	margin-right:auto;
+
+	/* function down to 320px wide */
+	/* image scales with window, ingredients and instructions
+	side by side when above 640px */
+
+}
+
+.side-by-side {
+	display:flex;
+	flex-wrap:wrap;
+	grid-template-columns: 1fr 1fr;
+	padding-left:0;
+	list-style-type:none;
+}
+
+img {
+	width:100%;
+}
+
+@media (max-width:320px) {
+	.side-by-side section {
+		width:100%;
+	}
+}
+
+@media (min-width:640px) {
+	.side-by-side section {
+		width:50%;
+	}
+}
+
+li {
+	padding-bottom:10px;
+}
+
+.unit {
+	font-weight:bolder;/*
+	font-style:italic;*/
+}
+
+
+
+
+/*.
+	width:100% for small?
+	or u can only apply dispaly flex at the certain size
+
+	flex direction prop
+
+	(img in div, hidden overflow, relative dimensions)
+}*/
+
+.ingredients ul {
+	list-style-type: circle;
+}
+
+aside {
+	padding-left:5%;
+	margin-bottom:3%;
+}
