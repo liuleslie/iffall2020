@@ -1,0 +1,178 @@
+html {
+	max-width:1080px;
+	padding: 3%;
+	padding-left: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	
+
+	/* margins when < 320 px*/
+}
+
+body, nav, footer, a {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:16pt;
+	font-weight: normal;
+	line-height: 1.25;
+	color: white;
+	text-decoration: none;
+}
+
+.menu a { 
+	text-transform: uppercase;
+
+}
+
+#menu {
+	background-color: black;
+	border-bottom:solid;
+	border-color: gray;
+	border-width: 0.5px;
+
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+/* this doesnt work —— NEED TO MAKE FONT SIZES RESPONSIVE, TURN SMALLER */
+/* characters and cast doenst respond when at smaller widths */
+@media (max-width: 320px) {
+	body, nav, footer {
+		margin-left: 1rem;
+		margin-right: 1rem;
+
+		font-size: 13pt;
+		/*padding-left: 1rem;
+		padding-right: 1rem;*/
+	}
+}
+
+
+
+
+.img_small {
+	width:50%;
+}
+
+.img_medium {
+	width:75%;
+}
+
+.img_full {
+	
+	width:100%;
+
+}
+
+
+.img_right {
+	object-position: center right;
+}
+
+.img_left {
+	object-position: center left;
+}
+
+
+
+
+
+
+
+footer {
+	margin: 18rem 0 4rem 0;
+}
+
+footer p {
+	text-transform: uppercase;
+	color: gray;
+	line-height: 0.5;
+}
+
+h1 {
+	font-family: "Monument Extended";
+    src: url("fonts/MonumentExtended-Ultrabold.otf");
+    font-size:4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height:0.8;
+    margin: 5rem 0 3rem 0;
+}
+
+.title {
+	font-style: italic;
+}
+
+.menu ul {
+	display:flex;
+	flex-wrap:wrap;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	padding-left:0;
+	list-style-type:none;
+	text-decoration: none;
+}
+
+.menu li {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+/* doesnt work */
+.menu li:last-of-type {
+	padding-right: none;
+}
+
+
+.menu a {
+	color: gray;
+}
+
+
+/* individual sections arent white and bolded italic*/
+#onhome, #onplot, #oncraft, #onpeople, #onaccolades, #onsources, .menu a:hover {
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.menu a:hover {
+	font-weight: normal;
+}
+
+#quote_rolling {
+	color:gray;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+.people ul {
+	display:flex;
+	flex-wrap:wrap;
+	grid-template-columns:1fr 1fr 1fr;
+	padding-left:0;
+	list-style-type:none;
+}
+
+.people img {
+	width:300px;
+	border-radius: 170px;
+}
+
+.people img:hover {
+	border-radius: 30px;
+}
+
+
