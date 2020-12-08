@@ -1,0 +1,308 @@
+/*@font-face {
+  font-family: "MonumentExtended-Ultrabold";
+  src: url("fonts/MonumentExtended-Ultrabold.otf") format("otf");
+  src: url("fonts/MonumentExtended-Ultrabold.otf")
+}*/
+
+
+
+body {
+	max-width:960px;
+	width:94%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	
+
+	/* margins when < 320 px*/
+}
+
+
+
+body, nav, footer, a { 
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:16pt;
+	font-weight: 300;
+	line-height: 1.25;
+	color: white;
+	text-decoration: none;
+}
+
+.menu a { 
+	text-transform: uppercase;
+
+}
+
+#menu {
+	background-color: black;
+	border-bottom:solid;
+	border-color: gray;
+	border-width: 0.5px;
+
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+/* this doesnt work —— NEED TO MAKE FONT SIZES RESPONSIVE, TURN SMALLER */
+/* characters and cast doenst respond when at smaller widths */
+@media (max-width: 640px) {
+	body, nav, a, footer {
+		font-size: 13pt;
+	}
+	/*h1 {
+		font-size:3rem;
+	}*/
+}
+
+
+@media (max-width: 1080) {
+	img {
+		margin-left: -3vw;
+	}
+}
+
+@media (min-width: 1000) {
+	img {
+		margin-left: calc(540px - 50vw);
+	}
+}
+
+
+
+
+.img_small {
+	width:50%;
+}
+
+.img_medium {
+	width:75%;
+}
+
+.img_full {
+	
+	width:100%;
+
+}
+
+
+/*.img_right {
+	object-position: center right;
+}
+
+.img_left {
+	object-position: center left;
+}*/
+
+.img_right {
+	float: right;
+	margin: 0 0 2rem 2rem;
+}
+
+.img_left  {
+	float: left;
+	margin: 0 2rem 2rem 0;
+}
+
+/*
+
+QUESTIONS FOR LAB HOURS:
+
+can i specify specific image interactions? or is this disrupted
+since grid COLUMN — not ROW — template is used?
+
+images??
+
+*/
+
+
+
+.clear {
+	clear:both;
+}
+
+/*.extraspace {
+	padding:5rem 0 0 0;
+}*/
+
+p + img {
+	margin-bottom: 30px;
+}
+/* adjacent selectors (above) — 
+https://stackoverflow.com/questions/10309408/how-to-add-vertical-spacing-between-block-elements-but-not-top-and-bottom */
+
+
+
+
+footer {
+	margin: 9rem 0 4rem 0;
+	/*clear: both;*/
+}
+
+footer p {
+	text-transform: uppercase;
+	color: gray;
+	line-height: 0.5;
+}
+
+h1 {
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	/*font-family: "Monument Extended";*/
+    font-size:4.5rem;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    line-height:0.8;
+    margin: 5rem 0 3rem 0;
+}
+
+
+
+
+
+
+
+
+
+.title {
+	font-style: italic;
+}
+
+/* HOW TO MAKE MENU SHORTER */
+
+/*.menu {
+	height: 1rem;
+	vertical-align: center;
+}*/
+
+.menu ul {
+	display:flex;
+	flex-wrap:wrap;/*
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+	width:100%;
+	padding-left:0;
+	list-style-type:none;
+	text-decoration: none;
+	justify-content: center;
+	margin:0;
+}
+
+.menu li {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+/* doesnt work */
+.menu li:last-of-type {
+	padding-right: none;
+}
+
+
+.menu a {
+	color: rgba(255,255,255,0.5);
+	
+}
+
+
+/*individual sections arent white and bolded italic*/
+#onhome a, #onplot a, #oncraft a, #onpeople a, #onaccolades a, #onsources a, .menu a:hover {
+	color: rgba(255,255,255,1);
+	font-weight: 700;
+	font-style: italic;
+}
+
+.menu a:hover {
+	font-weight: 700;
+}
+
+/*#quote_rolling {
+	color:gray;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}*/
+
+
+.charname {
+	font-weight:700;
+}
+
+.people div {
+	text-align:center;
+}
+
+
+
+
+
+.people ul {
+	display:flex;
+	flex-wrap:wrap;
+	/*grid-template-columns:1fr 1fr 1fr;*/
+	padding-left:0;
+	padding-bottom:30%;
+	list-style-type:none;
+}
+
+.people li {
+	width:100%;
+	display:block;/*
+	padding-bottom:10%;*/
+
+/*transform measures dimensions of specific element*/
+
+	padding:3% 3% 3% 3%;
+	box-sizing: border-box; /* building inwards, constraint on borderbox */
+	position:relative; /* positioning parent; everything inside is postiioned in relation to it*/
+}
+
+.people .personinfo {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	opacity:0;
+	transition:all 0.3s; /* all = all properties; what is changed --> transition is set here */
+}
+
+.people img {
+	/*width:250px;*/
+	width:100%;
+	border-radius: 200px;
+	opacity:1;
+	transition:all 0.3s;
+}
+
+.people li:hover img {
+	opacity:.5;
+}
+
+.people li:hover .personinfo {
+	opacity:1;
+	/*transition:all 3s;*/
+}
+
+/*.people img:hover {
+	border-radius: 30px;
+
+}*/
+
+@media (min-width:480px) {
+	.people li {
+		width:50%;
+	}
+}
+
+@media (min-width: 640px) {
+	.people li {
+		width:33%;
+	}
+}
+
+
+
